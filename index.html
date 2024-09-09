@@ -617,25 +617,27 @@
             </div><!-- End Info Item -->
 
           </div>
+         
+         <!-- https://docs.google.com/forms/d/e/1FAIpQLScr-Hq2jFvX49WrVFEF5ZpSxz8cTsPEfkFxqYAcUKnji7UmJQ/formResponse?usp=pp_url&entry.176085132=brian&entry.712295122=gmail@gmail.com&entry.1909808964=B&entry.1288284964=DBTBDTBTBBET-->          
 
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+         <div class="col-lg-8">
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLScr-Hq2jFvX49WrVFEF5ZpSxz8cTsPEfkFxqYAcUKnji7UmJQ/formResponse?embedded=true" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="entry.176085132" id="entry.176085132" class="form-control" placeholder="Your Name" required="">
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <input type="email" class="form-control" name="entry.712295122" id="entry.712295122" placeholder="Your Email" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input type="text" class="form-control" name="entry.1909808964" id="entry.1288284964" placeholder="Subject" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <textarea class="form-control" name="entry.1288284964" rows="6" placeholder="Message" required=""></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
@@ -747,6 +749,13 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script type="text/javascript">var submitted=false;</script>
+  <script type="text/javascript">
+  $('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+  </script>
 
 </body>
 
