@@ -11,6 +11,7 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
@@ -176,8 +177,8 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(12, 0, 145, .89);
-    /*background-image: url("https://getwallpapers.com/wallpaper/full/5/9/d/1006179-top-water-droplets-wallpaper-2880x1800.jpg");*/
+  background-color: rgba(12, 0, 145, .89);
+  /*background-image: url("https://getwallpapers.com/wallpaper/full/5/9/d/1006179-top-water-droplets-wallpaper-2880x1800.jpg");*/
   background-size: 100%;
   background-position: center;
 }
@@ -808,7 +809,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 10%);
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1484,6 +1485,22 @@ section,
   margin-top: 20px;
   margin-bottom: 6px;
 }
+
+.shimmer {
+  color: grey;
+  display: inline-block;
+  mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/350% 100%;
+  animation: shimmer 2.5s infinite;
+  font-size: 50px;
+  max-width: 200px;
+}
+
+@keyframes shimmer {
+  100% {
+    mask-position: left
+  }
+}
+
 
 .pricing .cta-btn:hover {
   background: var(--accent-color);
